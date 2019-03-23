@@ -4,9 +4,9 @@ import multiprocessing
 import torch
 import torch.optim as optim
 
-from src.model import SkipGram
-from src.preprocessing import DataProcess
-from src.utils import get_data
+from model import SkipGram
+from preprocessing import DataProcess
+from utils import get_data
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 

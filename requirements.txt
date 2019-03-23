@@ -1,0 +1,5 @@
+conllu==1.2.3
+gensim==3.7.1
+nltk==3.4
+pyLDAvis==2.1.2
+torch==1.0.1.post2
