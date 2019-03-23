@@ -115,7 +115,7 @@ class DataProcess:
 
         return negs
 
-    def gen_batches(self, word2idx, idx_pairs):
+    def gen_batches(self, idx_pairs):
         """
         generate batches
         from pairs of input and context words + list of negative sampling
@@ -147,7 +147,7 @@ class DataProcess:
         self.gen_negative_sample_table(vocab)
 
         # create batches
-        batches = self.gen_batches(word2idx, idx_pairs)
+        batches = self.gen_batches(idx_pairs)
 
         return batches, vocab, word2idx, idx2word
 
